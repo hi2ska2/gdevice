@@ -4,6 +4,9 @@
 #include <iostream>
 #include <ctime>
 
+#include "Stopwatch.h"
+Stopwatch overallTime;
+
 int main(int argc, char* argv[])
 {
   std::cout << "********\n";

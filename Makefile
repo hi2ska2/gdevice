@@ -4,7 +4,7 @@ INC_DIR =
 
 ALL_LIBS =
 
-inputFile = main.cc
+inputFile = Stopwatch.cc main.cc
 
 objectFile = $(inputFile:.cc=.o)
 dependFile = $(inputFile:.cc=.d)
