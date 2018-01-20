@@ -6,7 +6,9 @@
 
 int main(int argc, char* argv[])
 {
-  std::cout << "G-Device";
+  std::cout << "********\n";
+  std::cout << "G-Device\n";
+  std::cout << "********\n";
 
   return 0;
 }
