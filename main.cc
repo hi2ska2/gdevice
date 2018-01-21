@@ -47,15 +47,17 @@ int main(int argc, char* argv[])
   time(&endRawTime);
   timeinfo = localtime(&endRawTime);
   strftime(buffer,80,"%Y-%m-%d %H:%M:%S",timeinfo);
-  std::string str_end(buffer); 
+  std::string str_end(buffer);
+  
   std::cout << "Ended at " << str_end << "\n";
-
   std::cout << "Elapsed time: " << difftime(endRawTime,startRawTime) << " [sec].\n";
 
+  std::cout << "***********************************************\n";
   std::cout << "Stopwatch results\n";
   std::cout << "Overall time: " << overallTime.elapse() << " [sec]\n";
   std::cout << "Jacobian time: " << jacobianTime.getAccumulatedTimeInSec() << " [sec]\n";
   std::cout << "Matrix solver time: " << solveTime.getAccumulatedTimeInSec() << " [sec]\n";
+  std::cout << "***********************************************\n";
   
   return 0;
 }
