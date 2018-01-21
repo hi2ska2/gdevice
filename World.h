@@ -11,12 +11,17 @@
 #ifndef WorldH
 #define WorldH
 
+#include <vector>
+
+#include "Thing.h"
+
 class World {
  public:
   World();
 
  private:
-  //
+  std::vector<Thing*> _things;
+  Thing* _currentThing;
 };
 
 #endif

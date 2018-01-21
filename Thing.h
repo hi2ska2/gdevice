@@ -6,11 +6,19 @@
 // Please see LICENSE for license information //
 ////////////////////////////////////////////////
 
-// World.cc
+// Thing.h
 
-#include "World.h"
+#ifndef ThingH
+#define ThingH
 
-World::World()
-{
-  _things.clear();
-}
+#include "utilities.h"
+
+class Thing {
+  public:
+  Thing();
+
+  protected:
+  std::string _name;
+};
+
+#endif

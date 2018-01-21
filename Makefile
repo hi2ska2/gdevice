@@ -6,7 +6,7 @@ ALL_LIBS =
 
 rootFile = main.cc
 
-solverFiles = World.cc
+solverFiles = Thing.cc World.cc
 
 utilityFiles = utilities.cc Stopwatch.cc
 

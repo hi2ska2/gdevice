@@ -6,11 +6,11 @@
 // Please see LICENSE for license information //
 ////////////////////////////////////////////////
 
-// World.cc
+// Thing.cc
 
-#include "World.h"
+#include "Thing.h"
 
-World::World()
+Thing::Thing()
 {
-  _things.clear();
+  //
 }
