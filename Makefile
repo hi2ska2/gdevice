@@ -8,7 +8,7 @@ rootFile = main.cc
 
 solverFiles = World.cc
 
-utilityFiles = Stopwatch.cc
+utilityFiles = utilities.cc Stopwatch.cc
 
 inputFile = $(rootFile) $(solverFiles) $(utilityFiles)
 
