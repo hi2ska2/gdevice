@@ -4,7 +4,13 @@ INC_DIR =
 
 ALL_LIBS =
 
-inputFile = Stopwatch.cc main.cc
+rootFile = main.cc
+
+solverFiles = World.cc
+
+utilityFiles = Stopwatch.cc
+
+inputFile = $(rootFile) $(solverFiles) $(utilityFiles)
 
 objectFile = $(inputFile:.cc=.o)
 dependFile = $(inputFile:.cc=.d)
