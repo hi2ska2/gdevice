@@ -11,6 +11,7 @@
 #ifndef utilitiesH
 #define utilitiesH
 
+#include <iostream>
 #include <sstream>
 
 void myReportError(const std::string& message);

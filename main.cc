@@ -17,6 +17,8 @@ Stopwatch overallTime;
 Stopwatch jacobianTime;
 Stopwatch solveTime;
 
+#include "World.h"
+
 int main(int argc, char* argv[])
 {
   std::cout << "***********************************************\n";
@@ -39,6 +41,9 @@ int main(int argc, char* argv[])
   overallTime.start();
 
   // Something to do
+
+  // As a test, create a Lumped object.
+  Lumped* lumped = new Lumped("Resistor");
 
   // Finished
 

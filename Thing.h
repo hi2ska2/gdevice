@@ -15,10 +15,12 @@
 
 class Thing {
   public:
-  Thing();
+  Thing(const std::string& name);
 
   protected:
   std::string _name;
 };
+
+#include "Lumped.h"
 
 #endif
