@@ -6,11 +6,13 @@ ALL_LIBS =
 
 rootFile = main.cc
 
+readFiles = parser_tab.cc lexyy.cc ParseTree.cc
+
 solverFiles = Lumped.cc Thing.cc World.cc
 
 utilityFiles = utilities.cc Stopwatch.cc
 
-inputFile = $(rootFile) $(solverFiles) $(utilityFiles)
+inputFile = $(rootFile) $(solverFiles) $(utilityFiles) $(readFiles)
 
 objectFile = $(inputFile:.cc=.o)
 dependFile = $(inputFile:.cc=.d)
@@ -29,6 +31,15 @@ all: $(objectFile)
 
 %.d: %.cc
 	g++ -M $(COMPILE_OPTION) $(INC_DIR) -c $< > $@
+
+lexyy.cc: scanner.l
+	flex scanner.l
+	mv lex.yy.c lexyy.cc
+
+parser_tab.cc: parser.y
+	bison -d parser.y
+	mv parser.tab.c parser_tab.cc
+	mv parser.tab.h parser_tab.h
 
 clean:
 	rm -f *~

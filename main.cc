@@ -12,6 +12,9 @@
 #include <iostream>
 #include <ctime>
 
+extern FILE *yyin;
+int yyparse();
+
 #include "Stopwatch.h"
 Stopwatch overallTime;
 Stopwatch jacobianTime;
@@ -42,8 +45,14 @@ int main(int argc, char* argv[])
 
   // Something to do
 
-  // As a test, create a Lumped object.
-  Lumped* lumped = new Lumped("Resistor");
+  std::cout.flush();
+  
+  if (argc>1) { 
+    yyin=fopen(argv[1],"r");
+    yyparse();
+  } else {
+    std::cout << "Error: You should specify the name of the input file.\n";
+  }  
 
   // Finished
 

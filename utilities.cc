@@ -13,6 +13,11 @@
 #include <cstdlib>
 #include <iostream>
 
+void myReport(const std::string& message) {
+  std::cout << message << "\n";
+  std::cout.flush();
+}
+
 void myReportError(const std::string& message) {
   std::cout << "Error: " << message << "\n";
   std::cout.flush();

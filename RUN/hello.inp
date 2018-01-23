@@ -1,0 +1,10 @@
+Hello (type="1st_stmt") {
+  World (value=0.0) 
+}
+
+This (type="2nd_stmt") {
+  is (type="nested_stmt_of_2nd_stmt") {
+    gdevice (value=0.0)
+  }
+  Bye (type="another_nested_stmt")
+}

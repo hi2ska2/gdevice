@@ -13,7 +13,9 @@
 
 #include <iostream>
 #include <sstream>
+#include <vector>
 
+void myReport(const std::string& message);
 void myReportError(const std::string& message);
 
 #endif
