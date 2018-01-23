@@ -35,6 +35,10 @@ void Stmt::action(ParseTree* caller) {
     myReport(_name + " was called by " + callerName + ".");
   } else myReport(_name + " was called.");
 
-  bodyAction();
+  if (_name.compare("thing")==0) {
+    bodyAction();
+  } else {
+    bodyAction();
+  }
 }
 
