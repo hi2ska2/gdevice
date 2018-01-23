@@ -8,3 +8,7 @@ This (type="2nd_stmt") {
   }
   Bye (type="another_nested_stmt")
 }
+
+Best (type="3rd_stmt", where=1.0) {
+  regards (type="nested_stmt_of_3rd_stmt", address="your_office")
+}
