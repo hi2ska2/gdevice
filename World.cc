@@ -14,3 +14,10 @@ World::World()
 {
   _things.clear();
 }
+
+Thing* World::addThing(Thing* thing)
+{
+  _things.push_back(thing);
+  _currentThing = thing;
+  return _currentThing;
+}

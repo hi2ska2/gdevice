@@ -19,6 +19,8 @@ class World {
  public:
   World();
 
+  Thing* addThing(Thing* thing);
+
  private:
   std::vector<Thing*> _things;
   Thing* _currentThing;
