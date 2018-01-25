@@ -45,4 +45,7 @@ clean:
 	rm -f *~
 	rm -f *.o
 	rm -f *.d
+	rm -f lexyy.cc
+	rm -f parser_tab.cc
+	rm -f parser_tab.h
 	rm -f gdevice
