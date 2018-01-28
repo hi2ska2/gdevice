@@ -13,7 +13,7 @@
 #include "utilities.h"
 
 Lumped::Lumped(const std::string& name)
-  : Thing(name),
+  : Thing(name,ThingType::LUMPED),
     _type(LumpedType::U)
 {
   _V = 0.0;

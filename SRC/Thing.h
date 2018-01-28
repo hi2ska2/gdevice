@@ -11,14 +11,24 @@
 #ifndef ThingH
 #define ThingH
 
+#include "Field.h"
+#include "Id.h"
+
 #include "utilities.h"
 
-class Thing {
-  public:
-  Thing(const std::string& name);
+namespace ThingType {
+  enum Type { LUMPED };
+};
 
-  protected:
+class Thing {
+ public:
+  Thing(const std::string& name,ThingType::Type type);
+  
+ protected:
   std::string _name;
+  ThingType::Type _type;
+  Field* _field;
+  Id _thingId;
 };
 
 #include "Lumped.h"
