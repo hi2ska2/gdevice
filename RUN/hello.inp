@@ -1,5 +1,5 @@
 Hello (type="1st_stmt") {
-  World (value=0.0) 
+  World (value=0.0)
 }
 
 This (type="2nd_stmt") {
