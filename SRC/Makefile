@@ -8,7 +8,7 @@ rootFile = main.cc
 
 readFiles = parser_tab.cc lexyy.cc ParseTree.cc
 
-solverFiles = Lumped.cc Thing.cc World.cc
+solverFiles = Lumped.cc Thing.cc World.cc Test.cc
 
 utilityFiles = utilities.cc Stopwatch.cc
 
