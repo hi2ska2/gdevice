@@ -8,14 +8,14 @@
 
 // Yee.h
 
-#ifndef TestH
-#define TestH
+#ifndef YeeH
+#define YeeH
 
 #include "Thing.h"
 
-class Test : public Thing {
+class Yee : public Thing {
  public:
-  Test(const std::string& name);
+  Yee(const std::string& name);
 
  private:
   // Nothing inside  

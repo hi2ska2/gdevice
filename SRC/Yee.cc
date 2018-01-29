@@ -8,11 +8,11 @@
 
 // Yee.cc
 
-#include "Test.h"
+#include "Yee.h"
 
 #include "utilities.h"
 
-Test::Test(const std::string& name)
+Yee::Yee(const std::string& name)
   : Thing(name,ThingType::LUMPED) 
 {
   // Nothing to do
