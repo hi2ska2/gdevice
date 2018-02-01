@@ -1,0 +1,13 @@
+thing (type="lumped", name="vin") { lumped (type="v",value=0.0) } 
+
+thing (type="lumped", name="res") { lumped (type="r",value=1e3) } 
+
+thing (type="circuit", name="cir") {
+  circuit {
+    node(thing="gnd", name="GND")
+    node(thing="vin", contact="0", name="GND")
+    node(thing="vin", contact="1", name="IN")
+    node(thing="res", contact="0", name="GND")
+    node(thing="res", contact="1", name="IN")
+  }
+}
