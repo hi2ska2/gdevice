@@ -23,3 +23,5 @@ Thing::Thing(const std::string& name,
   std::cout << "Its ThingType::type is " << _type << ".\n";
   std::cout << "\n";
 }
+
+std::string Thing::getName() { return _name; }

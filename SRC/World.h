@@ -1,10 +1,10 @@
-////////////////////////////////////////////////
-// G-Device                                   //
-//                                            //
-// Copyright 2018 Sung-Min Hong               //
-//                                            //
-// Please see LICENSE for license information //
-////////////////////////////////////////////////
+/////////////////////////////////////////////////
+// G-Device                                    //
+//                                             //
+// Copyright 2018 Sung-Min Hong                //
+//                                             //
+// Please see LICENSE for license information. //
+/////////////////////////////////////////////////
 
 // World.h
 
@@ -20,6 +20,8 @@ class World {
   World();
 
   Thing* addThing(Thing* thing);
+  Thing* getCurrentThing();
+  Thing* getThing(const std::string& thingName);
 
  private:
   std::vector<Thing*> _things;
