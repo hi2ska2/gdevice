@@ -1,4 +1,4 @@
-/////////////////////////////////////////////////
+;/////////////////////////////////////////////////
 // G-Device                                    //
 //                                             //
 // Copyright 2018 Sung-Min Hong                //
@@ -11,6 +11,7 @@
 #ifndef ThingH
 #define ThingH
 
+#include "ParseTree.h"
 #include "Field.h"
 #include "Id.h"
 

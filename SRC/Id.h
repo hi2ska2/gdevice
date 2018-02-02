@@ -12,6 +12,15 @@
 #define IdH
 
 class Id {
+ public:
+  Id(int id=-1) : _id(id) { }
+ private:
+  int _id;
+};
+
+class ThingId : public Id {
+ public:
+ ThingId(int id=-1) : Id(id) { }
 };
 
 #endif
